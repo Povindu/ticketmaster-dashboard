@@ -1,0 +1,73 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Staatliches&display=swap'); */
+
+.DList{
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /* border: 1px solid red; */
+    border-radius: 15px;
+    padding: 10px;
+    width: 90%;
+    margin: auto;
+    background-color:  rgba(0, 11, 19, 0.855);
+}
+
+.btn-refresh{
+    margin: auto;
+    margin-bottom: 20px;
+    width:100px;
+    /* border-radius: 1px; */
+}
+
+.btn-refresh button{
+    color: white;
+    padding: 5px 5px;
+    background-color: rgba(255, 255, 255, 0.153);
+    border: 0;
+    border-radius: 5px;
+}
+
+.col-contain {
+    /* border: 1px solid red; */
+    margin: 0;
+    background-color: rgba(0, 41, 68, 0.29);
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+  
+.col-contain > div {
+    /* border: 1px solid red; */
+    display: inline-block;
+    padding: 8px 0px;
+    text-align: center;
+    
+}
+
+.head{
+    margin-bottom: 10px;
+    background-color: rgba(0, 0, 0, 0);
+
+}
+
+
+.col1{
+    width:15%;
+}
+
+.col2{
+    width:35%;
+}
+.col3{
+    width:20%;
+}
+.col4{
+    width:28%;
+    
+    /* border: 1px solid red; */
+}
