@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Header/>
       <DisplayList/>
-      <AddTicket/>
+      {/* <AddTicket/> */}
     </div>
   );
 }
