@@ -6,6 +6,7 @@ import './App.css';
 import DisplayList from './components/DisplayList/DisplayList';
 import Header from './components/Header/Header';
 import AddTicket from './components/AddTicket/AddTicket';
+import ImageMerge from './components/ImageMerge/ImageMerge';
 
 
 
@@ -16,6 +17,7 @@ function App() {
       <Header/>
       <DisplayList/>
       {/* <AddTicket/> */}
+      <ImageMerge/>
     </div>
   );
 }
