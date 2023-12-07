@@ -6,7 +6,7 @@ import './App.css';
 import DisplayList from './components/DisplayList/DisplayList';
 import Header from './components/Header/Header';
 import AddTicket from './components/AddTicket/AddTicket';
-
+import SheetData from './components/SheetData/SheetData';
 
 
 function App() {
@@ -16,6 +16,7 @@ function App() {
       <Header/>
       <DisplayList/>
       {/* <AddTicket/> */}
+      
     </div>
   );
 }
