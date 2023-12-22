@@ -7,7 +7,7 @@ import DisplayList from './components/DisplayList/DisplayList';
 import DisplayFormData from './components/DisplayFormData/DisplayFormData';
 import Header from './components/Header/Header';
 import AddTicket from './components/AddTicket/AddTicket';
-// import ImageMerge from './components/ImageMerge/ImageMerge';
+import ImageMerge from './components/ImageMerge/ImageMerge';
 
 
 
