@@ -13,16 +13,16 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/ticketmaster-dashboard/",
     element: <App/>,
     // errorElement: <ErrorPage />,
   },
   {
-    path: "/FormData",
+    path: "/ticketmaster-dashboard/FormData",
     element: <DisplayFormData/>,
   },
   {
-    path: "/TicketList",
+    path: "/ticketmaster-dashboard/TicketList",
     element: <DisplayList/>,
   },
 ]);
