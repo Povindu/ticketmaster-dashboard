@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/ticketmaster-dashboard/static/css/main.58104457.css",
+    "main.js": "/ticketmaster-dashboard/static/js/main.391eb238.js",
+    "static/media/Background.png": "/ticketmaster-dashboard/static/media/Background.af2abfd2dcc3bc93b1a5.png",
+    "index.html": "/ticketmaster-dashboard/index.html",
+    "main.58104457.css.map": "/ticketmaster-dashboard/static/css/main.58104457.css.map",
+    "main.391eb238.js.map": "/ticketmaster-dashboard/static/js/main.391eb238.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.58104457.css",
+    "static/js/main.391eb238.js"
+  ]
+}
