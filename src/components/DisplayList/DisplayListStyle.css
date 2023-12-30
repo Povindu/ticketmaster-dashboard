@@ -56,18 +56,28 @@
 }
 
 
-.col1{
-    width:15%;
+.col11{
+    width:10%;
 }
 
-.col2{
-    width:35%;
+.col22{
+    width:30%;
 }
-.col3{
-    width:20%;
+.col33{
+    width:15%;
 }
-.col4{
-    width:28%;
-    
+.col44{
+    width:25%;
     /* border: 1px solid red; */
+}
+.col55{
+    width: 20%;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
 }

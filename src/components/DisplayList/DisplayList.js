@@ -4,7 +4,7 @@ import {ref, set, onValue, get} from "firebase/database";
 import { useEffect, useState } from 'react';
 
 import './DisplayListStyle.css';
-
+import Header from '../Header/Header';
 
 function DisplayList() {
 
@@ -27,8 +27,9 @@ function DisplayList() {
           keys.forEach((key, index) => {
             // console.log(`${key}: ${data[key]}`);
             const da = data[key].checkIn;
-            const name = data[key].name;
-            const mobile = data[key].mobile;
+            const name = data[key].fullName;
+            const mobile = data[key].mobileNo;
+            const email = data[key].email;
             // console.log(data[key].checkIn);
             var stat = '';
             if(da){
@@ -40,7 +41,9 @@ function DisplayList() {
             else{
               stat = "Invalid";
             }
-            setDataList(dataList => [...dataList,  [key, name, mobile, stat]]);
+            if(key !== 'lastTicketNo'){
+            setDataList(dataList => [...dataList,  [key, name, mobile, email, stat]]);
+            }
           });
           
           // console.log(dataList);
@@ -54,6 +57,8 @@ function DisplayList() {
 
 
   return (
+    <div>
+      <Header/>
     <div className="DisplayList">
       
       <div className='btn-refresh'>
@@ -65,20 +70,23 @@ function DisplayList() {
         <ul className='DList'>
           <li>  
               <div className='col-contain head'>
-                <div className='col1 col'>Ticket No</div>
-                <div className='col2 col'>Ticket Holder's Name</div> 
-                <div className='col3 col'> Mobile No</div> 
-                <div className='col4 col'> Status</div>
+                <div className='col11 col'>Ticket No</div>
+                <div className='col22 col'>Ticket Holder's Name</div> 
+                <div className='col33 col'>Mobile No</div> 
+                <div className='col44 col'>Email</div>
+                <div className='col55 col'>Status</div>
               </div>    
           </li>
 
           {dataList.map((data, index) => (
             <li key={index}>  
             <div className='col-contain'>
-              <div className='col1 col'>{data[0]}</div>
-              <div className='col2 col'>{data[1]}</div> 
-              <div className='col3 col'>{data[2]}</div> 
-              <div className='col4 col'>{data[3]}</div>
+              <div className='col11 col'>{data[0]}</div>
+              <div className='col22 col'>{data[1]}</div> 
+              <div className='col33 col'>{data[2]}</div> 
+              <div className='col44 col'>{data[3]}</div>
+              {(data[4] == 'Checked In' ) && <div className='col55 col green'>{data[4]}</div>}
+              {(data[4] == 'Not Checked In' ) && <div className='col55 col red'>{data[4]}</div>}
             </div>    
             </li>
           ))}
@@ -86,6 +94,7 @@ function DisplayList() {
 
         
       </div>
+    </div>
     </div>
   );
 }

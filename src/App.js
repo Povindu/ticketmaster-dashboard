@@ -6,10 +6,10 @@ import { useEffect, useState } from 'react';
 import DisplayList from './components/DisplayList/DisplayList';
 import DisplayFormData from './components/DisplayFormData/DisplayFormData';
 import Header from './components/Header/Header';
-import AddTicket from './components/AddTicket/AddTicket';
-import ImageMerge from './components/ImageMerge/ImageMerge';
+// import AddTicket from './components/AddTicket/AddTicket';
+// import ImageMerge from './components/ImageMerge/ImageMerge';
 
-
+import {Link} from "react-router-dom";
 
 function App() {
 
@@ -17,7 +17,8 @@ function App() {
     <div className="App">
       <Header/>
       {/* <DisplayList/> */}
-      <DisplayFormData/>
+      <Link to='/formData' className='Navbutton'>Form Data</Link>
+      <Link to='/TicketList' className='Navbutton'>Ticket List</Link>
       {/* <AddTicket/> */}
       {/* <ImageMerge/> */}
     </div>
