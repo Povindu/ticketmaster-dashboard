@@ -19,6 +19,7 @@ function DisplayList() {
 
   const reference = ref(db, 'formData/');
   const [dataList, setDataList] = useState([]);
+  const [count, setCount] = useState(0);
   let currentTicketNoX;
 
   useEffect(() => {
@@ -43,9 +44,11 @@ function DisplayList() {
             const position = data[key].position;
             const imageURL = data[key].imgURL;
             const verification = data[key].verfied;
+            const status = data[key].LeoStatus;
+            setCount(index);
             
             if(key !== 'lastFormID'){
-            setDataList(dataList => [...dataList,  [key, Fname, email, mobile,club, position, imageURL, verification]]);
+            setDataList(dataList => [...dataList,  [key, Fname, email, mobile,club, position, imageURL, verification, status]]);
             }
           });
         }
@@ -181,9 +184,13 @@ function DisplayList() {
     <div>
       <Header/>
     <div className="DisplayList">
-      
+      <div className="topbar">
       <div className='btn-refresh'>
           <button  onClick={() => getData()}>Refresh</button>
+      </div>
+      <div className="count">
+        Form Count : {count}
+      </div>
       </div>
 
       <div className='container'>
@@ -191,26 +198,29 @@ function DisplayList() {
         <ul className='DList'>
           <li>  
               <div className='col-contain head'>
-                <div className='col1 col'>No</div>
+                <div className='col0 col'>No</div>
                 <div className='col1 col'>Form No</div>
                 <div className='col2 col'>Ticket Holder's Name</div> 
                 <div className='col3 col'>Email</div> 
                 <div className='col4 col'>Mobile No</div> 
+                <div className='col9 col'>Leo Status</div>
                 <div className='col5 col'>Club</div>
                 <div className='col6 col'>Position</div>
                 <div className='col7 col'>Payment Proof</div>
                 <div className='col8 col'>Verify</div>
+                
               </div>    
           </li>
 
           {dataList.map((data, index) => (
             <li key={index}>  
             <div className='col-contain'>
-              <div className='col1 col'>{index}</div>
+              <div className='col0 col'>{index}</div>
               <div className='col1 col'>{data[0]}</div>
               <div className='col2 col'>{data[1]}</div> 
               <div className='col3 col'>{data[2]}</div> 
               <div className='col4 col'>{data[3]}</div> 
+              <div className='col9 col'>{data[8]}</div> 
               <div className='col5 col'>{data[4]}</div> 
               <div className='col6 col'>{data[5]}</div> 
               <div className='col7 col'><button onClick={() => window.open(data[6],'Image')}>Open Image</button></div>
@@ -220,12 +230,13 @@ function DisplayList() {
               { data[7] === true &&
                 <div className='col8 col'>Verfied</div>
               }
-            </div>    
+              
+            </div>  
             </li>
+            
           ))}
         </ul>
       </div>
-
       {/* <button onClick={sendEmail}>Send Email</button> */}
     </div>
     </div>

@@ -23,6 +23,7 @@
     margin: auto;
     margin-bottom: 20px;
     width:100px;
+    display: inline-block;
     /* border-radius: 1px; */
 }
 
@@ -58,6 +59,13 @@
 
 .col{
     word-wrap: break-word;
+    font-size: 16px;
+    text-align: center;
+    vertical-align: middle;
+    /* border: 1px solid red; */
+}
+.col0{
+    width:4%
 }
 .col1{
     width:5%;
@@ -73,26 +81,48 @@
     width:10%;
 }
 .col5{
-    width:15%;
+    width:13%;
 }
 .col6{
-    width:8%;
+    width:9%;
 }
 .col7{
-    width:9%;
+    width:6%;
+    margin-left: 5px;
 }
 .col8{
-    width:9%;
+    width:6%;
+    margin-left: 5px;
+    
 }
+
+.col9{
+    width:7%;
+
+}
+
+.count{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    display: inline-block;
+}
+.topbar{
+    margin: auto;
+    width: 90%;
+    text-align: center;
+}
+
 
 .col-contain button{
     padding: 8px 14px;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px;
+    font-size: 14px;
     color: white;
     background-color:rgba(0, 39, 66, 0.855);
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.112);
     border: 0;
+    border-radius: 10px;
 }
 
 .col-contain button:hover{

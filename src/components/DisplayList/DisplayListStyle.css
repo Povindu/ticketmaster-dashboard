@@ -64,14 +64,19 @@
     width:30%;
 }
 .col33{
-    width:15%;
+    width:10%;
 }
 .col44{
-    width:25%;
+    width:20%;
     /* border: 1px solid red; */
 }
 .col55{
-    width: 20%;
+    width: 10%;
+}
+
+.col66{
+    width: 10%;
+
 }
 
 .green{

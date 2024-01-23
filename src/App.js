@@ -17,8 +17,8 @@ function App() {
     <div className="App">
       <Header/>
       {/* <DisplayList/> */}
-      <Link to='/formData' className='Navbutton'>Form Data</Link>
-      <Link to='/TicketList' className='Navbutton'>Ticket List</Link>
+      <Link to='/ticketmaster-dashboard/formData' className='Navbutton'>Form Data</Link>
+      <Link to='/ticketmaster-dashboard/TicketList' className='Navbutton'>Ticket List</Link>
       {/* <AddTicket/> */}
       {/* <ImageMerge/> */}
     </div>

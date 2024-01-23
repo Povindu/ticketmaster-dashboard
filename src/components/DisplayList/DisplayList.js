@@ -30,6 +30,7 @@ function DisplayList() {
             const name = data[key].fullName;
             const mobile = data[key].mobileNo;
             const email = data[key].email;
+            const status = data[key].LeoStatus;
             // console.log(data[key].checkIn);
             var stat = '';
             if(da){
@@ -42,7 +43,7 @@ function DisplayList() {
               stat = "Invalid";
             }
             if(key !== 'lastTicketNo'){
-            setDataList(dataList => [...dataList,  [key, name, mobile, email, stat]]);
+            setDataList(dataList => [...dataList,  [key, name, mobile, email, stat, status]]);
             }
           });
           
@@ -75,6 +76,7 @@ function DisplayList() {
                 <div className='col33 col'>Mobile No</div> 
                 <div className='col44 col'>Email</div>
                 <div className='col55 col'>Status</div>
+                <div className='col66 col'>Leo Status</div>
               </div>    
           </li>
 
@@ -87,6 +89,7 @@ function DisplayList() {
               <div className='col44 col'>{data[3]}</div>
               {(data[4] == 'Checked In' ) && <div className='col55 col green'>{data[4]}</div>}
               {(data[4] == 'Not Checked In' ) && <div className='col55 col red'>{data[4]}</div>}
+              <div className='col66 col'>{data[5]}</div>
             </div>    
             </li>
           ))}
