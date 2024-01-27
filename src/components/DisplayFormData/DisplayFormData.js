@@ -108,11 +108,9 @@ function DisplayList() {
 
     confirmAlert(options);
 
-
-
-
-
   }
+
+
 
  async function verifyTicket2 (data) {
 
@@ -138,9 +136,9 @@ function DisplayList() {
     console.log("Modified Ticket Number" + modifiedTicketNo);  
 
     const ImageURL = await getDownloadURL(sRef(storage, `tickets/${modifiedTicketNo}.jpg`));
-    const p1 = 4900 + parseInt(currentTicketNoX);
-    const p2 = 8458 + parseInt(currentTicketNoX);
-    const pass = 'Z4D' + p1 + 'NN' + p2;
+    const p1 = 8600 + parseInt(currentTicketNoX);
+    const p2 = 3758 + parseInt(currentTicketNoX);
+    const pass = 'N4DE' + p1 + 'LN' + p2;
     console.log("Image URL" + ImageURL);
     const ref2 = ref(db, 'tickets/' + modifiedTicketNo);
 
@@ -166,7 +164,7 @@ function DisplayList() {
       ticket_ID: modifiedTicketNo
     }
 
-    emailjs.send('service_k2l2d29', 'template_ldhzl3b', emaildata, 'ghwdsbuMsFwlF9C-q')
+    emailjs.send('service_alc7vlc', 'template_w5u5kaj', emaildata, 'ezUW2doYmlW2ailgB')
       .then((result) => {
           console.log(emaildata);
       }, (error) => {
