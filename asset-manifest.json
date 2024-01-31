@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/ticketmaster-dashboard/static/css/main.6bcde47b.css",
-    "main.js": "/ticketmaster-dashboard/static/js/main.29459397.js",
+    "main.js": "/ticketmaster-dashboard/static/js/main.02636f18.js",
     "static/media/Background.png": "/ticketmaster-dashboard/static/media/Background.af2abfd2dcc3bc93b1a5.png",
     "index.html": "/ticketmaster-dashboard/index.html",
     "main.6bcde47b.css.map": "/ticketmaster-dashboard/static/css/main.6bcde47b.css.map",
-    "main.29459397.js.map": "/ticketmaster-dashboard/static/js/main.29459397.js.map"
+    "main.02636f18.js.map": "/ticketmaster-dashboard/static/js/main.02636f18.js.map"
   },
   "entrypoints": [
     "static/css/main.6bcde47b.css",
-    "static/js/main.29459397.js"
+    "static/js/main.02636f18.js"
   ]
 }
